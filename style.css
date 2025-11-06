@@ -27,14 +27,14 @@
     background-color: white;
 }
 
-/* Website label scale animation */
-.container-fluid #website-label {
-    transition: 0.2s ease;
+/* Website logo rotate animation */
+#logo-animated {
+    transition: transform 1s ease;
+    transform: rotate(0deg);
 }
 
-#website-label:hover {
-    transform: scale(1.05);
-    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
+#logo-animated:hover {
+    transform: rotate(360deg) scale(1.2);
 }
 
 /* Initial position for Hello section */
