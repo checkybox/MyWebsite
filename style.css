@@ -133,3 +133,8 @@ body {
     opacity: 1;
 }
 
+/* Projects section */
+.card-img-top {
+    height: 400px;
+    object-fit: contain;
+}

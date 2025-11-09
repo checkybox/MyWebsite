@@ -30,6 +30,60 @@
     </nav>
 </div>
 
+<!-- Projects section -->
+<div class="container my-4">
+    <div class="row">
+        <div class="col-12 col-md-6 col-lg-4 py-4">
+            <div class="card shadow-lift border-radius-25px h-100" id="card-hidden-1">
+                <img src="assets/images/projects/1.png" class="card-img-top border-radius-25px" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">MyWebsite</h5>
+                    <h6 class="card-subtitle mb-2">You're using it right now!</h6>
+                    <p class="card-text">This counts as a project too, why wouldn't I include it? And it's pretty good too!</p>
+                    <a href="https://github.com/checkybox/MyWebsite" class="btn btn-primary border-radius-25px" target="_blank">Visit on GitHub</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 py-4">
+            <div class="card shadow-lift border-radius-25px h-100" id="card-hidden-2">
+                <img src="assets/images/projects/2.png" class="card-img-top border-radius-25px" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Pygame Tetris</h5>
+                    <h6 class="card-subtitle mb-2">Final assignment of ITP 2 course</h6>
+                    <p class="card-text">A working tetris written in python with pygame. Made with the help of some YouTube guide.</p>
+                    <a href="https://github.com/checkybox/Pygame-Tetris" class="btn btn-primary border-radius-25px" target="_blank">Visit on GitHub</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 py-4">
+            <div class="card shadow-lift border-radius-25px h-100" id="card-hidden-3">
+                <img src="assets/images/projects/3.png" class="card-img-top border-radius-25px" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">QuizGame</h5>
+                    <h6 class="card-subtitle mb-2">Final assignment of Web Technologies (Frontend) course</h6>
+                    <p class="card-text">CLASSIFIED INFORMATION. ACCESS DENIED.</p>
+                    <a href="https://github.com/checkybox/QuizGame" class="btn btn-primary disabled border-radius-25px" target="_blank">Visit on GitHub</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    $("#card-hidden-1, #card-hidden-2, #card-hidden-3").css({
+        "opacity": "0",
+        "transition": "opacity 1.5s ease, box-shadow .5s ease"
+    });
+    setTimeout(function() {
+        $("#card-hidden-1").css("opacity", "1");
+    }, 100);
+    setTimeout(function() {
+        $("#card-hidden-2").css("opacity", "1");
+    }, 600);
+    setTimeout(function() {
+        $("#card-hidden-3").css("opacity", "1");
+    }, 1100);
+</script>
+
 
 <!-- Footer -->
 <div class="container-fluid p-0 bg-dark-custom">
