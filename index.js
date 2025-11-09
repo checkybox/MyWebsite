@@ -9,4 +9,24 @@ function setThemeFromSystem() {
 setThemeFromSystem();
 window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", setThemeFromSystem);
 
-//
+// Form validation in contact section
+document.getElementById('contact-form')?.addEventListener('submit', function(e) {
+    e.preventDefault();
+
+    if (!this.checkValidity()) {
+        e.stopPropagation();
+        this.classList.add('was-validated');
+        return;
+    }
+
+    // Show success message if form is valid
+    document.getElementById('success-message').classList.remove('d-none');
+    this.reset();
+    this.classList.remove('was-validated');
+
+    // Hide success message after 3 seconds
+    setTimeout(() => {
+        $("#success-message").fadeOut(500);
+    }, 3000);
+});
+
